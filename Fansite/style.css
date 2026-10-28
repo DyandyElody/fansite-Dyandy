@@ -1,0 +1,292 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+.hero{
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(142, 10, 165);
+    padding-top: 200px;
+}
+.Title{
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+.Title h1{
+    font-size: 70px;
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+}
+.back-text{
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.back-text span{
+    display: inline-block;
+    font-size: 200px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    -webkit-text-fill-color: transparent;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1s, opacity 0.5s, -webkit-text-stroke-color 0.5s;
+}
+.back-text span.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.back-text span:nth-child(1){
+    transition-delay: 0.5s;
+}
+.back-text span:nth-child(2){
+    transition-delay: 1s;
+}
+.back-text span:nth-child(3){
+    transition-delay: 1.5s;
+}
+.back-text span:nth-child(4){
+    transition-delay: 2s;
+}
+.back-text span:nth-child(5){
+    transition-delay: 2.5s;
+}
+.back-text span:nth-child(6){
+    transition-delay: 3s;
+}
+.back-text span:nth-child(7){
+    transition-delay: 3.5s;
+}
+.back-text:hover span{
+    -webkit-text-stroke-color: #e8ffcd;
+}
+#mijnDiv1{
+    font:100% Arial, Helvetica, sans-serif;
+    color:rgb(247, 188, 238);
+    font-size: 15px;
+    font-weight: bold;
+    position: left;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+h3{
+   font:100% Arial, Helvetica, sans-serif;
+    color:rgb(5, 0, 4);
+    font-size: 30px;
+    font-weight: bold;
+    position: center;
+    text-align:center; 
+}
+#mijnDiv2{
+    border: 1px solid rgb(254, 195, 255);
+    background-color: rgb(247, 233, 247);
+    border-radius: 25px;
+    border-width: 40px;
+    position: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    padding: 40px;
+
+}
+h4{
+    font:100% Arial, Helvetica, sans-serif;
+    color:rgb(5, 0, 4);
+    font-size: 30px;
+    font-weight: bold;
+    position: center;
+    text-align:center;
+}
+#mijnDiv3{
+    border: 1px solid rgb(254, 195, 255);
+    background-color: rgb(247, 233, 247);
+    border-radius: 25px;
+    border-width: 40px;
+    position: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    padding: 40px;
+}
+.Paragraaf{
+    font:100% Arial, Helvetica, sans-serif;
+    color:rgb(5, 0, 4);
+    font-size: 20px;
+    position: center;
+    text-align:center;
+    padding-top: 20px;
+}
+.text {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./img/Background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.videos {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(142, 10, 165);
+    background-size:cover;
+}
+#MijnDiv4{
+    font:100% Georgia;
+    color:rgb(163, 252, 189);
+    font-size: 60px;
+    font-weight: bold;
+    position: center;
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#MijnDiv5{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+#MijnDiv5 img{
+    width: 640px;
+    height: 360px;
+}
+.Onder {
+    display: flex;
+    gap: 350px;
+    justify-content: center;
+    align-items: center;
+    font:100% Georgia;
+    color:rgb(163, 252, 189);
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+    padding-bottom: 75px;
+}
+.Sounds {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(184, 56, 207);
+}
+#MijnDiv6{
+    font:100% Georgia;
+    color:rgb(163, 252, 189);
+    font-size: 40px;
+    position: center;
+    text-align:center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+#MyDiv7{
+    font:100% Georgia;
+    color:rgb(168, 242, 249);
+    font-size: 75px;
+    position: center;
+    text-align:center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+#MijnDiv8{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#MijnDiv8 img{
+    width: 640px;
+    height: 360px;
+}
+.Onder2{
+    display: flex;
+    gap: 350px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.Information {
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/achtergrond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#myThing{
+    font:100% Arial, Helvetica, sans-serif;
+    color:rgb(9, 0, 8);
+    font-size: 30px;
+    font-weight: bold;
+    position: left;
+    margin-left: 30px;
+    padding-top: 50px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#knop {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 25px;
+  background-color: #e5cfe9;
+  color: rgb(3, 1, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#knop:hover {
+  background-color: rgb(248, 174, 64);
+}
+
+#naam {
+  margin-left: 25px;
+  border-radius: 5px;
+}
+
+#knop2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 20px;
+  background-color: #e5cfe9;
+  color: rgb(3, 1, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#Goodbye {
+  margin-left: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(3, 1, 1);
+}
